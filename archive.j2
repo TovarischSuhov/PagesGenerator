@@ -1,0 +1,11 @@
+{% extends "base.j2" %}
+{% block title %}ShowMustGoOn - Archive{% endblock %}
+{% block body %}
+<div class=list>
+<ul>
+  {% for name in pages_list %}
+	<li> <a href={{name.url}}>{{name.description}}</a> </li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

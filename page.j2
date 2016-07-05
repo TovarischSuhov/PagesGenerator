@@ -1,0 +1,43 @@
+{% extends "base.j2" %}
+{% block title %}ShowMustGoOn - {{day_name}}{% endblock %}
+{% block body %}
+<div class=menu>
+<a href="archive.html">Архив</a> <a href="{{previous_day}}">Предидущий день</a>
+</div>
+<div class=day_name>
+  <h2>{{day_name}}</h2>
+</div> 
+<div class=table>
+<table>
+<h3>Расписание</h3>
+<tr>
+<th>Что?</th>
+<th>Где?</th>
+<th>Когда?</th>
+</tr>
+{% for row in table %}
+<tr>
+<td>{{row.what}}</td>
+<td>{{row.where}}</td>
+<td>{{row.when}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+  
+<div class=photos>
+<h3>Фотографии</h3>
+{% for photo in photos %}
+<img src={{photo.path}}>{{photo.description}}</img>
+{% endfor %}
+</div>
+
+<div class=facts>
+<h3>Интересные факты</h3>
+{% for fact in facts %}
+<p>
+{{fact}}
+</p>
+{% endfor %}
+</div>
+{% endblock %}
