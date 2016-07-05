@@ -4,6 +4,11 @@
 <div class=menu>
 <a href="archive.html">Архив</a> <a href="{{previous_day}}">Предидущий день</a>
 </div>
+<script>
+	var link = document.querySelector('link[rel=import]');
+	var content = link.import.querySelector('#weather');
+	document.body.appendChild(content.cloneNode(true));
+</script>
 <div class=day_name>
   <h2>{{day_name}}</h2>
 </div> 
