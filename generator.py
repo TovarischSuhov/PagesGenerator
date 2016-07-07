@@ -10,6 +10,7 @@ import sys
 import codecs
 import zipfile
 import xml.dom.minidom as xmlp
+import PythonMagick
 
 IMG_REGEX = re.compile(r'.*\.jpe?g',re.IGNORECASE | re.DOTALL)
 DOCX_REGEX = re.compile(r'.*\.docx',re.IGNORECASE | re.DOTALL)
@@ -87,10 +88,10 @@ def ParsePics(pics_list, path, outpath):
         namebase = str(current_time.tm_year) + str(current_time.tm_mon) + str(current_time.tm_mday)
 	for i in pics_list:
 		temp = {}
-		temp["description"] = i
+		temp["description"] = IMG_REGEX.sub(i)
 		newname = namebase + str(counter) + ".jpg"
 		temp["path"] = "img/" + newname
-		copyfile(path + '/' + i, pics_dir + newname)
+		copyfile(path + '/' + i, pics_dir + newname) #Put resize
 		result.append(temp)
 		counter+=1
 
