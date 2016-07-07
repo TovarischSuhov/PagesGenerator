@@ -1,7 +1,6 @@
 from jinja2 import Template, FileSystemLoader
 from jinja2.environment import Environment
-from os import listdir
-from shutil import copyfile
+from os import listdir, system
 import argparse
 import re
 import json
@@ -10,9 +9,8 @@ import sys
 import codecs
 import zipfile
 import xml.dom.minidom as xmlp
-import PythonMagick
 
-IMG_REGEX = re.compile(r'.*\.jpe?g',re.IGNORECASE | re.DOTALL)
+IMG_REGEX = re.compile(r'(.*)\.jpe?g',re.IGNORECASE | re.DOTALL)
 DOCX_REGEX = re.compile(r'.*\.docx',re.IGNORECASE | re.DOTALL)
 JSON_REGEX = re.compile(r'config\.json',re.IGNORECASE | re.DOTALL)
 
@@ -88,10 +86,10 @@ def ParsePics(pics_list, path, outpath):
         namebase = str(current_time.tm_year) + str(current_time.tm_mon) + str(current_time.tm_mday)
 	for i in pics_list:
 		temp = {}
-		temp["description"] = IMG_REGEX.sub(i)
+		temp["description"] = IMG_REGEX.sub(r'\1',i)
 		newname = namebase + str(counter) + ".jpg"
 		temp["path"] = "img/" + newname
-		copyfile(path + '/' + i, pics_dir + newname) #Put resize
+		os.system("convert " + path + '/' + i  + " -resize 2000x600 " + pics_dir + newname) #Put resize
 		result.append(temp)
 		counter+=1
 
