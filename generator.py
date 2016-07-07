@@ -89,7 +89,7 @@ def ParsePics(pics_list, path, outpath):
 		temp["description"] = IMG_REGEX.sub(r'\1',i)
 		newname = namebase + str(counter) + ".jpg"
 		temp["path"] = "img/" + newname
-		os.system("convert " + path + '/' + i  + " -resize 2000x600 " + pics_dir + newname) #Put resize
+		system("convert " + path + '/' + i  + " -resize 2000x600 " + pics_dir + newname) #Put resize
 		result.append(temp)
 		counter+=1
 
