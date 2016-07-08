@@ -38,3 +38,15 @@ table{
 
 .facts{
 }
+
+.temp{
+  width: 20%;
+}
+
+.weather_ico{
+  width: 40px;
+}
+
+.weather_desc{
+	width: 20%;
+}
