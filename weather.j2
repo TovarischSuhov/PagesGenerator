@@ -1,5 +1,14 @@
-<div class="weather">
-<img src={% weather_args.pic %} alt={% weather_args.desc %}></img>
-<img src={% weather_args.wind %} alt={% weather_args.wind_desc %}>{% weather_args.wind_speed %}</img>
-{% weather_args.temp %}
+<div class=weather>
+	<div class=temp>
+		{{temp}}
+	</div>
+	<div class=weather_ico>
+		<img src="{{ico}}"></img>
+	</div>
+	<div class=weather_desc>
+		{{weather}}
+	</div>
+	<div class=wind>
+		<img src=img/weather/1.png>{{speed}}</img>
+	</div>
 </div>
