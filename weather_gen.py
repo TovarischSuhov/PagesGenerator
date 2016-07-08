@@ -36,7 +36,7 @@ def main():
     weather = json.loads(args.json)
     config={}
     config['temp'] = weather['temp']
-    config['speed'] = weather['wind']['speed'] + u'м/с'
+    config['speed'] = str(weather['wind']['speed']) + u'м/с'
     config['weather'] = weather_type[weather['weather']]
     config['ico'] = "img/weather/" + weather_icon[weather['weather']]
 
