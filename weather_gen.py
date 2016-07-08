@@ -6,6 +6,7 @@ from jinja2 import Template, FileSystemLoader
 from jinja2.environment import Environment
 import sys
 import argparse
+import codecs
 
 weather_type = {
         "suny": u'Солнечно',
