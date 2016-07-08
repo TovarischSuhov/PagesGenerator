@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import json
-from jinja2 import Template
+from jinja2 import Template, FileSystemLoader
+from jinja2.environment import Environment
 import sys
 import argparse
 
@@ -25,6 +26,14 @@ weather_icon = {
         "windy": "windy.svg",
         "storm": "storm.svg",
         }
+
+def RenderTemplate(contents, args):
+    env = Environment()
+    env.loader = FileSystemLoader('.')
+    template = env.get_template(contents)
+    result = template.render(args)
+    return result
+
 
 def main():
     parser = argparse.ArgumentParser()
