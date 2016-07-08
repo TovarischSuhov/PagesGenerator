@@ -19,9 +19,9 @@ weather_type = {
         }
 
 weather_icon = {
-        "suny": "Suny.svg",
+        "suny": "suny.svg",
         "rainy": "rainy.svg",
-        "cloudy": "Cloudy.svg",
+        "cloudy": "cloudy.svg",
         "subcloudy": "subcoudy.svg",
         "bitrainy": "bitrainy.svg",
         "windy": "windy.svg",
