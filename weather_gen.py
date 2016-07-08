@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 
 import json
 from jinja2 import Template
