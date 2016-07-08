@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-#-*-coding: utf-8 -*-
+
+# -*- coding: utf-8 -*-
 
 import json
 from jinja2 import Template
@@ -36,7 +37,7 @@ def main():
     weather = json.loads(args.json)
     config={}
     config['temp'] = weather['temp']
-    config['speed'] = weather['wind']['speed'] + 'м/с'
+    config['speed'] = weather['wind']['speed'] + u'м/с'
     config['weather'] = weather_type[weather['weather']]
     config['ico'] = "img/weather/" + weather_icon[weather['weather']]
 
