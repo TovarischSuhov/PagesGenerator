@@ -39,6 +39,11 @@ table{
 .facts{
 }
 
+.weather{
+	background-color: #f0f0f0;
+	margin: 5px;
+}
+
 .temp{
   width: 25%;
 	float: left;
@@ -57,4 +62,8 @@ table{
 .wind{
 	width: 25%;
 	float: left;
+}
+
+.weather_ico_img{
+	width: 20px;
 }
