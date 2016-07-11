@@ -7,7 +7,7 @@
 <script>
 	var link = document.querySelector('link[rel=import]');
 	var content = link.import.querySelector('.weather');
-	document.body.getElementByTagName("div")[0].appendChild(content.cloneNode(true));
+	document.body.getElementsByTagName("div")[0].appendChild(content.cloneNode(true));
 </script>
 <div class=day_name>
   <h2>{{day_name}}</h2>
