@@ -29,6 +29,7 @@ table{
 .menu_entry{
 	width: 50%;
 	text-align: center;
+	float: left;
 }
 
 .day_name{
