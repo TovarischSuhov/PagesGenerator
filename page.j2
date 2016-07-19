@@ -2,7 +2,12 @@
 {% block title %}ShowMustGoOn - {{day_name}}{% endblock %}
 {% block body %}
 <div class=menu>
-<a href="archive.html">Архив</a> <a href="{{previous_day}}">Предидущий день</a>
+<div calss=menu_entry>
+	<a href="archive.html">Архив</a>
+</div>
+<div class=menu_entry>
+	<a href="{{previous_day}}">Предидущий день</a>
+</div>
 </div>
 <script>
 	var link = document.querySelector('link[rel=import]');
