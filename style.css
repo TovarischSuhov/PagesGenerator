@@ -68,27 +68,27 @@ table{
 	width: 20px;
 }
 .north{
-	transform: rotate(270);
+	transform: rotate(270deg);
 }
 .north-east{
-	transform: rotate(315);
+	transform: rotate(315deg);
 }
 .east{
-	transform: rotate(0);
+	transform: rotate(0deg);
 }
 .south-east{
-	transform: rotate(45);
+	transform: rotate(45deg);
 }
 .south{
-	transform: rotate(90);
+	transform: rotate(90deg);
 }
 .south-west{
-	transform: rotate(135);
+	transform: rotate(135deg);
 }
 .west{
-	transform: rotate(180);
+	transform: rotate(180deg);
 }
 .north-west{
-	transform: rotate(225);
+	transform: rotate(225deg);
 }
 
