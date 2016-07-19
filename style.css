@@ -79,41 +79,50 @@ table{
 
 .speed{
 	width: 50%;
+	float: left;
 }
 
 .weather_ico_img{
-	width: 20px;
+	height: 20px;
 }
 .north{
 	transform: rotate(270deg);
+	float: left;
 	width: 50%;
 }
 .north-east{
 	transform: rotate(315deg);
+	float: left;
 	width: 50%;
 }
 .east{
 	transform: rotate(0deg);
+	float: left;
 	width: 50%;
 }
 .south-east{
 	transform: rotate(45deg);
+	float: left;
 	width: 50%;
 }
 .south{
 	transform: rotate(90deg);
+	float: left;
 	width: 50%;
 }
 .south-west{
 	transform: rotate(135deg);
+	float: left;
 	width: 50%;
 }
 .west{
 	transform: rotate(180deg);
+	float: left;
 	width: 50%;
 }
 .north-west{
 	transform: rotate(225deg);
+	float: left;
 	width: 50%;
 }
 
