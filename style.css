@@ -67,3 +67,28 @@ table{
 .weather_ico_img{
 	width: 20px;
 }
+.north{
+	transform: rotate(0);
+}
+.north-east{
+	transform: rotate(45);
+}
+.east{
+	transform: rotate(90);
+}
+.south-east{
+	transform: rotate(135);
+}
+.south{
+	transform: rotate(180);
+}
+.south-west{
+	transform: rotate(225);
+}
+.west{
+	transform: rotate(270);
+}
+.north-west{
+	transform: rotate(315);
+}
+
