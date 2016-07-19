@@ -38,16 +38,20 @@
 <div class=photos>
 <h3>Фотографии</h3>
 {% for photo in photos %}
+<div class=photo>
 <img src={{photo.path}}>{{photo.description}}</img>
+</div>
 {% endfor %}
 </div>
 
 <div class=facts>
 <h3>Интересные факты</h3>
 {% for fact in facts %}
+<div class=fact>
 <p>
 {{fact}}
 </p>
+</div>
 {% endfor %}
 </div>
 {% endblock %}
