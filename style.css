@@ -18,12 +18,16 @@ table{
 }
 
 .footer{
+	margin-top: 20px;
+	padding-top:20px;
 }
 
 .list{
 }
 			
 .menu{
+	margin: 15px;
+	padding: 15px;
 }
 
 .menu_entry{
@@ -46,8 +50,8 @@ table{
 }
 
 .weather{
-	background-color: #f0f0f0;
-	margin: 5px;
+	margin: 15px;
+	padding: 15px;
 }
 
 .temp{
