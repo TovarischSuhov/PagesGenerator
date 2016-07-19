@@ -35,8 +35,10 @@ li{
 }
 			
 .menu{
-	margin: 15px;
-	padding: 15px;
+	margin-top: 15px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .menu_entry{
@@ -64,14 +66,16 @@ li{
 }
 
 .weather{
-	margin: 15px;
-	padding: 15px;
+	margin-top: 15px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .temp{
   width: 20%;
 	float: left;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .weather_ico{
@@ -80,63 +84,63 @@ li{
 }
 
 .weather_desc{
-	width: 20%;
+	width: 30%;
 	float: left;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .wind{
-	width: 40%;
+	width: 30%;
 	float: left;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .speed{
-	width: 50%;
+	width: 60%;
 	float: left;
 }
 
 .weather_ico_img{
-	height: 20px;
+	height: 16px;
 }
 .north{
 	transform: rotate(270deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .north-east{
 	transform: rotate(315deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .east{
 	transform: rotate(0deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .south-east{
 	transform: rotate(45deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .south{
 	transform: rotate(90deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .south-west{
 	transform: rotate(135deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .west{
 	transform: rotate(180deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .north-west{
 	transform: rotate(225deg);
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 
