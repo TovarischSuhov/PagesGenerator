@@ -18,8 +18,8 @@ table{
 }
 
 .footer{
-	margin-top: 20px;
-	padding-top:20px;
+	margin-top: 30px;
+	padding-top: 30px;
 }
 
 .list{
@@ -55,23 +55,30 @@ table{
 }
 
 .temp{
-  width: 25%;
+  width: 20%;
 	float: left;
+	font-size: 20px;
 }
 
 .weather_ico{
-  width: 25%;
+  width: 20%;
 	float: left;
 }
 
 .weather_desc{
-	width: 25%;
+	width: 20%;
 	float: left;
+	font-size: 20px;
 }
 
 .wind{
-	width: 25%;
+	width: 40%;
 	float: left;
+	font-size: 20px;
+}
+
+.speed{
+	width: 50%;
 }
 
 .weather_ico_img{
@@ -79,26 +86,34 @@ table{
 }
 .north{
 	transform: rotate(270deg);
+	width: 50%;
 }
 .north-east{
 	transform: rotate(315deg);
+	width: 50%;
 }
 .east{
 	transform: rotate(0deg);
+	width: 50%;
 }
 .south-east{
 	transform: rotate(45deg);
+	width: 50%;
 }
 .south{
 	transform: rotate(90deg);
+	width: 50%;
 }
 .south-west{
 	transform: rotate(135deg);
+	width: 50%;
 }
 .west{
 	transform: rotate(180deg);
+	width: 50%;
 }
 .north-west{
 	transform: rotate(225deg);
+	width: 50%;
 }
 
