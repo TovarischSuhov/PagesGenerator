@@ -9,6 +9,8 @@ img{
 
 table{
 	width: 100%;
+	border: 1px solid grey;
+	table-layout: auto;
 }
 
 ul{
